@@ -1,0 +1,38 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependency directories
+node_modules
+
+# Production build
+dist
+build
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Editor folders
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Cache
+.cache/
+.temp/
+.eslintcache
+
+# Vite files
+vite.config.timestamp-*
+
+# Optional
+coverage/
