@@ -28,24 +28,31 @@ export default function Navbar() {
             <Icon icon="mdi:email-outline" width="18" />
 
             <a
-              href="joinus@mindex.co.in"
+              href="mailto:joinus@mindex.co.in"
               className="hover:underline"
             >
-           joinus@mindex.co.in
+              joinus@mindex.co.in
             </a>
           </span>
+          {/* <a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=joinus@mindex.co.in"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hover:underline"
+>
+  joinus@mindex.co.in
+</a> */}
 
           <span className="flex items-center gap-2 text-[11px] sm:text-xs md:self-auto md:text-sm">
             <Icon icon="mdi:phone-outline" width="18" />
 
             <a
-              href="tel:+93110-93150"
+              href="tel:+919876543210"
               className="hover:underline"
             >
               +91 98765 43210
             </a>
           </span>
-
         </div>
 
       </nav>
