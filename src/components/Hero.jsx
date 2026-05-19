@@ -127,9 +127,9 @@ export const Hero = ({ onOpenModal, onExploreClick }) => {
                 <div className="relative overflow-hidden rounded-[1.7rem]">
 
                   <img
-                    src="/mindexHero.jpeg"
+                    src="/mindexMobile.jpeg"
                     alt="Mobile App"
-                    className="w-full max-w-[400px] mx-auto object-contain rounded-[1.7rem] transition-transform duration-700 animate-[float_4s_ease-in-out_infinite]"
+                   className="w-full max-w-[500px] h-[500px] sm:h-[600px] lg:h-[500px] mx-auto object-contain rounded-[1.7rem] transition-transform duration-700 animate-[float_4s_ease-in-out_infinite]"
                   />
 
                 </div>

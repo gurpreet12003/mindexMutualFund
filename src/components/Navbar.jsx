@@ -1,61 +1,62 @@
 import { Menu, X } from "lucide-react";
 import { Icon } from "@iconify/react";
 import { useState } from "react";
+import React from "react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
-  const links = [
-    { label: "Calculator", href: "#calculator" },
-  ];
+
 
   return (
     <>
-      <nav className="w-full bg-gradient-to-r from-white via-red-500 to-red-800 text-white px-8 py-4 flex items-center justify-between">
+   <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-neutral-200">
+        {/* Top Navbar */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16 md:h-20 w-full">
 
-        {/* LOGO */}
-        <div className="h-14 w-36">
-          <img
-            src="/mindex2.png"
-            alt="Logo"
-            className="h-full w-full object-contain"
-          />
+            {/* Logo */}
+            <div className="h-14 w-36 flex items-center">
+              <img
+                src="/mindex2.png"
+                alt="Logo"
+                className="h-full w-full object-contain"
+              />
+            </div>
+
+            {/* Contact Info */}
+            <div className=" lg:flex items-center gap-6">
+
+              {/* Email */}
+              <span className="flex items-center gap-2 text-sm text-neutral-700">
+                <Icon icon="mdi:email-outline" width="20" />
+
+                <a
+                  href="mailto:joinus@mindex.co.in"
+                  className="text-red-600 hover:text-red-700 transition-colors"
+                >
+                  joinus@mindex.co.in
+                </a>
+              </span>
+
+              {/* Phone */}
+              <span className="flex items-center gap-2 text-sm text-neutral-700">
+                <Icon icon="mdi:phone-outline" width="20" />
+
+                <a
+                  href="tel:+919876543210"
+                  className="text-red-600 hover:text-red-700 transition-colors"
+                >
+                  +91 98765 43210
+                </a>
+              </span>
+
+            </div>
+
+
+          </div>
         </div>
-
-        {/* Desktop Menu */}
-        <div className="flex flex-col gap-2 md:flex-row md:items-center md:gap-6">
-          <span className="flex self-end items-center gap-2 text-[11px] sm:text-xs md:self-auto md:text-sm">
-            <Icon icon="mdi:email-outline" width="18" />
-
-            <a
-              href="mailto:joinus@mindex.co.in"
-              className="hover:underline"
-            >
-              joinus@mindex.co.in
-            </a>
-          </span>
-          {/* <a
-  href="https://mail.google.com/mail/?view=cm&fs=1&to=joinus@mindex.co.in"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="hover:underline"
->
-  joinus@mindex.co.in
-</a> */}
-
-          <span className="flex items-center gap-2 text-[11px] sm:text-xs md:self-auto md:text-sm">
-            <Icon icon="mdi:phone-outline" width="18" />
-
-            <a
-              href="tel:+919876543210"
-              className="hover:underline"
-            >
-              +91 98765 43210
-            </a>
-          </span>
-        </div>
-
-      </nav>
+      </header>
 
     </>
   );

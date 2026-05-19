@@ -2,7 +2,7 @@
 import  Navbar  from './components/Navbar';
 import { Hero } from './components/Hero';
 import { ExploreFunds } from './components/ExploreFunds';
-import { PortfolioServices } from './components/PortfolioServices';
+
 import { WhyMindex } from './components/WhyMindex';
 import { FundCategories } from './components/FundCategories';
 import { HowItWorks } from './components/HowItWorks';
@@ -22,32 +22,7 @@ export const App = () => {
   const [selectedFund, setSelectedFund] = useState(0);
   const [serviceName, setServiceName] = useState(0);
 
-  const handleSearch = () => {
-    setSearchQuery(query);
-    const exploreSection = document.getElementById('explore-funds');
-    if (exploreSection && query.trim().length > 0) {
-      exploreSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const handleOpenModal = () => {
-    setSelectedFund(null);
-    setServiceName(service || 'Mutual Fund Advisory');
-    setModalOpen(true);
-  };
-
-  const handleInvestClick = () => {
-    setSelectedFund(fund);
-    setServiceName('');
-    setModalOpen(true);
-  };
-
-  const handleExploreClick = () => {
-    const exploreSection = document.getElementById('explore-funds');
-    if (exploreSection) {
-      exploreSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+ 
 
   return (
     <div className="min-h-screen bg-white text-black font-sans selection:bg-red-600 selection:text-white">
@@ -59,20 +34,20 @@ export const App = () => {
       </div>
 
       {/* Header / Navbar */}
-      <Navbar onSearch={handleSearch} onOpenModal={handleOpenModal} />
+      <Navbar  />
 
       {/* Main Content */}
       <main>
-        <Hero onOpenModal={handleOpenModal} onExploreClick={handleExploreClick} />
+        <Hero />
         <WhatsAppButton/>
-        <PortfolioServices onOpenModal={handleOpenModal} />
+        
         <WhyMindex />
         <FundCategories />
         <HowItWorks />
         <Testimonials />
         <FAQ />
         <FormPage/>
-        <CTASection onOpenModal={handleOpenModal} />
+        <CTASection />
       </main>
 
       {/* Footer */}
