@@ -118,10 +118,10 @@ export const Hero = ({ onOpenModal, onExploreClick }) => {
               <div className="absolute w-72 h-72 bg-red-500/20 blur-3xl rounded-full animate-pulse"></div>
 
               {/* Floating Card */}
-              <div className="relative bg-white/90 backdrop-blur-xl border border-red-100 rounded-[2rem] p-4 shadow-2xl shadow-red-100 hover:shadow-red-200 transition-all duration-500 hover:-translate-y-2">
+              <div className="relative bg-white backdrop-blur-xl border border-red-600 rounded-[2rem] p-4 shadow-2xl shadow-red-100 hover:shadow-red-200 transition-all duration-500 hover:-translate-y-2">
 
                 {/* Gradient Border Effect */}
-                <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-red-500/10 via-transparent to-red-500/5 pointer-events-none"></div>
+                <div className="absolute inset-0 rounded-[2rem] bg-slate-50"></div>
 
                 {/* Image Wrapper */}
                 <div className="relative overflow-hidden rounded-[1.7rem]">

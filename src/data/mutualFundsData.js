@@ -223,20 +223,20 @@ export const FUND_CATEGORIES_INFO = [
     iconName: 'PieChart',
     features: ['In-built asset allocation', 'Cushions market falls', 'Dynamic rebalancing']
   },
-  {
-    id: 'elss',
-    name: 'Tax Saving (ELSS)',
-    description: 'Equity Linked Savings Schemes offering dual benefits of robust capital growth and tax deductions up to ₹1.5 Lakh under Sec 80C.',
-    iconName: 'FileText',
-    features: ['Shortest lock-in (3 Years)', 'Tax savings up to ₹46,800', 'Long-term equity compounding']
-  },
-  {
-    id: 'index',
-    name: 'Index Funds',
-    description: 'Passive mutual funds that track market indices like Nifty 50. Offers low expense ratios and eliminates fund manager bias.',
-    iconName: 'BarChart2',
-    features: ['Extremely low expense ratio', 'Transparent portfolio', 'Replicates broad market gains']
-  }
+  // {
+  //   id: 'elss',
+  //   name: 'Tax Saving (ELSS)',
+  //   description: 'Equity Linked Savings Schemes offering dual benefits of robust capital growth and tax deductions up to ₹1.5 Lakh under Sec 80C.',
+  //   iconName: 'FileText',
+  //   features: ['Shortest lock-in (3 Years)', 'Tax savings up to ₹46,800', 'Long-term equity compounding']
+  // },
+  // {
+  //   id: 'index',
+  //   name: 'Index Funds',
+  //   description: 'Passive mutual funds that track market indices like Nifty 50. Offers low expense ratios and eliminates fund manager bias.',
+  //   iconName: 'BarChart2',
+  //   features: ['Extremely low expense ratio', 'Transparent portfolio', 'Replicates broad market gains']
+  // }
 ];
 
 export const TESTIMONIALS = [
