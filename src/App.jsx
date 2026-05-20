@@ -16,6 +16,7 @@ import { useState } from 'react';
 import React from "react";
 import { FormPage } from './components/form';
 import WhatsAppButton from './components/whatsapp';
+import SIPCalculator from './components/calculator';
 export const App = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [modalOpen, setModalOpen] = useState(false);
@@ -43,6 +44,7 @@ export const App = () => {
         
         <WhyMindex />
         <FundCategories />
+        <SIPCalculator/>
         <HowItWorks />
         <Testimonials />
         <FAQ />
