@@ -73,6 +73,9 @@
 //     </Scroll>
 //   );
 // };
+
+
+
 import React from 'react';
 import { ArrowRight, ShieldCheck, CheckCircle2 } from 'lucide-react';
 import Scroll from './scrollEffect';
@@ -133,8 +136,8 @@ export const CTASection = ({ onOpenModal }) => {
       {/* Parallax div — fixed on desktop, static contain on mobile */}
       
 <div
-  className="parallax-bg"
-  style={{ backgroundImage: 'url(/parllexImg.jpeg)' }}
+  className="parallax-bg p-4"
+  style={{ backgroundImage: 'url(/parlex2.jpeg)' }}
 />
     </section>
   );
