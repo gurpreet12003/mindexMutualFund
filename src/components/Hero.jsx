@@ -1,7 +1,7 @@
 import React from 'react';
 import { ShieldCheck, TrendingUp, ArrowRight, Star } from 'lucide-react';
 import { STATS } from '../data/mutualFundsData';
-import Scroll from './scrollEffect';
+
 
 
 // interface HeroProps {
@@ -11,7 +11,7 @@ import Scroll from './scrollEffect';
 
 export const Hero = ({ onOpenModal, onExploreClick }) => {
   return (
-   <Scroll>
+   
 
 
     <section className="relative bg-white pt-12 pb-20 overflow-hidden border-b border-gray-100">
@@ -166,6 +166,6 @@ export const Hero = ({ onOpenModal, onExploreClick }) => {
       </div>
     </section>
 
-   </Scroll>
+
   );
 };

@@ -44,7 +44,7 @@
     background-size: cover;
 
     /* Better responsive positioning */
-    background-position: center top;
+    background-position:  top;
 
     background-attachment: fixed;
   }
