@@ -21,6 +21,8 @@
   .parallax-bg {
     height: 1000px;       /* ← desktop height */
     background-attachment: fixed;
-    background-position: center 200%;
+      background-size: cover;
+    background-position: 0px 70px ;
+
   }
 }
